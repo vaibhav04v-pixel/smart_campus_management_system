@@ -1,0 +1,45 @@
+# ==============================================================================
+# Smart Campus Management System — Root .gitignore
+# ==============================================================================
+# This file tells Git which files and folders to NEVER track or commit.
+# The most critical rule: .env files must NEVER be committed.
+# ==============================================================================
+
+# ── Environment Variables (CRITICAL — never commit these) ─────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── Node.js Dependencies ──────────────────────────────────────────────────────
+# node_modules folders can be recreated with `npm install`
+node_modules/
+**/node_modules/
+
+# ── Build Output ──────────────────────────────────────────────────────────────
+dist/
+build/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS-Specific Files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── IDE / Editor Settings ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Vite Cache ────────────────────────────────────────────────────────────────
+.vite/
+frontend/.vite/
